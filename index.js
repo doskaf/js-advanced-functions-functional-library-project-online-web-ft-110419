@@ -129,7 +129,7 @@ const fi = (function() {
     },
     
     uniq: function(array, isSorted, callback) {
-      if (!isSorted) {
+      if (!callback) {
         let newArr = [];
         for (let i = 0; i < array.length; i++) {
           if (!newArr.some(e => e === array[i])) {
@@ -137,9 +137,6 @@ const fi = (function() {
           }
         }
         return newArr
-      } else {
-        let newArr = [];
-        array.map()
       }
     },
 
