@@ -33,10 +33,10 @@ const fi = (function() {
       return arr
     },
 
-    reduce: function(collection, callback, acc=0) {
-      let total = acc;
+    reduce: function(collection, callback, acc) {
+      let total = 0;
       for (let i = 0; i < collection.length; i++) {
-        total += parseInt(callback(collection[i]))
+        total += callback(acc, collection[i])
       }
       return total
     },
