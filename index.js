@@ -106,6 +106,10 @@ const fi = (function() {
       }
       return arr
     },
+    
+    sortBy: function(array, callback) {
+      
+    },
 
     functions: function() {
 
