@@ -137,6 +137,8 @@ const fi = (function() {
           }
         }
         return newArr
+      } else {
+        let changed = array.map(e => callback(e))
       }
     },
 
