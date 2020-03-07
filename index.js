@@ -120,6 +120,7 @@ const fi = (function() {
             arr[i] = parseInt(arr[i].join())
           }
         }
+        return arr
       } else {
         return array.join().split(",").map(e => parseInt(e))
       }
