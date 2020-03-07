@@ -122,6 +122,7 @@ const fi = (function() {
             newArr.push(arr[i])
           }
         }
+        return newArr
       } else {
         return arr.join().split(",").map(e => parseInt(e))
       }
