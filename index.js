@@ -50,7 +50,7 @@ const fi = (function() {
     
     find: function(collection, predicate) {
       for (let i = 0; i < collection.length; i++) {
-        if (collection[i] === predicate) {
+        if (predicate(collection[i])) {
           return collection[i]
         }
       }
