@@ -38,6 +38,9 @@ const fi = (function() {
       let i = 0;
       if (acc) {
         total = acc
+      } else {
+        total = collection[0];
+        i = 1
       }
       for (let i = 0; i < collection.length; i++) {
         total += collection[i]
