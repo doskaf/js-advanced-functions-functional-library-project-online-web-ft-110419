@@ -65,6 +65,10 @@ const fi = (function() {
       }
       return arr
     },
+    
+    size: function(collection) {
+      
+    },
 
     functions: function() {
 
