@@ -48,7 +48,7 @@ const fi = (function() {
       return total
     },
     
-    find: function() {
+    find: function(collection, predicate) {
       
     },
 
