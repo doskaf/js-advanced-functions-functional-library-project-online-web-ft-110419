@@ -141,7 +141,9 @@ const fi = (function() {
         let changed = array.map(e => callback(e));
         let newArr = [];
         for (let i = 0; i < changed.length; i++) {
-          
+          if (!newArr.some(e => e === changed[i])) {
+            newArr.push(changed[i])
+          }
         }
       }
     },
