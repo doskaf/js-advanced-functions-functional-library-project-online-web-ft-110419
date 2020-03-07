@@ -127,6 +127,10 @@ const fi = (function() {
         return arr.join().split(",").map(e => parseInt(e))
       }
     },
+    
+    uniq: function(array, isSorted, callback) {
+      
+    },
 
     functions: function(array, callback) {
 
