@@ -109,9 +109,7 @@ const fi = (function() {
     
     sortBy: function(array, callback) {
       let arr = [...array]
-      return arr.sort(function(a,b) {
-        return callback(a) - callback(b)
-      })
+      return arr.sort(function(a,b){ return callback(a) - callback(b) })
     },
 
     functions: function(array, callback) {
