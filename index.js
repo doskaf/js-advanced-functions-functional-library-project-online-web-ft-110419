@@ -19,7 +19,7 @@ const fi = (function() {
     },
 
     map: function(collection, callback) {
-
+      return collection.map(e => callback(e))
     },
 
     reduce: function() {
