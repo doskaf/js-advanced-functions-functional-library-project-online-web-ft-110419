@@ -35,11 +35,11 @@ const fi = (function() {
 
     reduce: function(collection, callback, acc) {
       let total = 0;
-      let i = 0;
-      if (acc) {
-        total = acc;
-        
+      if (acc) { total = acc }
+      for (let i = 0; i < collection.length; i++) {
+        total += collection[i]
       }
+      return total
     },
 
     functions: function() {
