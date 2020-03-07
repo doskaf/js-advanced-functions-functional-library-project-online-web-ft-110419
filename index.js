@@ -47,6 +47,10 @@ const fi = (function() {
       }
       return total
     },
+    
+    find: function() {
+      
+    },
 
     functions: function() {
 
