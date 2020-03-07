@@ -81,16 +81,8 @@ const fi = (function() {
       return total
     },
     
-    first: function(array, [n]) {
-      let firsts = [];
-      for (let i = 0; i < [n]; i++) {
-        firsts.push(array[i])
-      }
-      if (firsts.length === 1) {
-        return firsts[0]
-      } else {
-        return firsts
-      }
+    first: function(array, n) {
+      
     },
 
     functions: function() {
