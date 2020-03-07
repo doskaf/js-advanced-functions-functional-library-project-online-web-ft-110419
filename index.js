@@ -108,7 +108,7 @@ const fi = (function() {
     },
     
     sortBy: function(array, callback) {
-      
+      return array.sort(callback)
     },
 
     functions: function(array, callback) {
