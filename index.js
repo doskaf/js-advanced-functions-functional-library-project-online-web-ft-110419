@@ -108,12 +108,10 @@ const fi = (function() {
     },
     
     sortBy: function(array, callback) {
-      if (Array.isArray(array)) {
-        return array.sort(callback(array))
-      } else {
-        let values = Object.values(array);
-        return array.sort(callback(values))
-      }
+      let arr = [...array]
+      return arr.sort(function(a,b) {
+        return callback(a) - callback(b)
+      })
     },
 
     functions: function(array, callback) {
