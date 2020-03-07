@@ -115,7 +115,7 @@ const fi = (function() {
     flatten: function(array, shallow) {
       if (shallow) {
         let arr = [...array];
-        for (let i = 0; i < array.length; i++) {
+        for (let i = 0; i < arr.length; i++) {
           
         }
       } else {
