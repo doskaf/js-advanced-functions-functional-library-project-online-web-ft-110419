@@ -116,7 +116,7 @@ const fi = (function() {
       if (shallow) {
         let arr = [...array];
         for (let i = 0; i < arr.length; i++) {
-          
+          if (Array.isArray(arr[i]))
         }
       } else {
         return array.join().split(",").map(e => parseInt(e))
