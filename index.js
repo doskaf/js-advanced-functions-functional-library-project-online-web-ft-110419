@@ -58,7 +58,7 @@ const fi = (function() {
     
     filter: function(collection, predicate) {
       
-    }
+    },
 
     functions: function() {
 
