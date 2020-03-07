@@ -72,6 +72,11 @@ const fi = (function() {
         for (let i = 0; i < collection.length; i++) {
           ++total
         }
+      } else {
+        let values = Object.values(collection);
+        for (let i = 0; i < values.length; i++) {
+          ++total
+        }
       }
       return total
     },
