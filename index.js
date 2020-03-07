@@ -69,7 +69,7 @@ const fi = (function() {
     size: function(collection) {
       let total = 0;
       for (let i = 0; i < collection.length; i++) {
-        total++
+        ++total
       }
     },
 
