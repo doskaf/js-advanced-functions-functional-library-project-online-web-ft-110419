@@ -20,8 +20,15 @@ const fi = (function() {
 
     map: function(collection, callback) {
       let arr = [];
-      for (let i = 0; i < collection.length; i++) {
-        arr.push(callback(collection[i]))
+      if (Array.isArray(collection)) {
+        for (let i = 0; i < collection.length; i++) {
+          arr.push(callback(collection[i]))
+        }
+      } else {
+        let values = Object.values(collection);
+        for (let i = 0; i < values.length; i++) {
+          callback(values[i])
+        }
       }
       return arr
     },
