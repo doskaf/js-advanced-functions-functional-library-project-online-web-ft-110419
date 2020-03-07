@@ -86,6 +86,11 @@ const fi = (function() {
       for (let i = 0; i < [n]; i++) {
         firsts.push(array[i])
       }
+      if (firsts.length === 1) {
+        return firsts[0]
+      } else {
+        return firsts
+      }
     },
 
     functions: function() {
