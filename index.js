@@ -12,7 +12,7 @@ const fi = (function() {
       } else {
         let values = Object.values(collection);
         for (let i = 0; i < values.length; i++) {
-          callback
+          callback(values[i])
         }
       }
       return collection
