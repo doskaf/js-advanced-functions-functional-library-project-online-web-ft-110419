@@ -42,7 +42,7 @@ const fi = (function() {
         total = collection[0];
         i = 1;
       }
-      for (let i = 0; i < collection.length; i++) {
+      for (i; i < collection.length; i++) {
         total += collection[i]
       }
       return total
