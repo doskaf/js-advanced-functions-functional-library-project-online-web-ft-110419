@@ -133,7 +133,7 @@ const fi = (function() {
         let newArr = [];
         for (let i = 0; i < array.length; i++) {
           if (!newArr.some(e => e === array[i])) {
-            
+            newArr.push(array[i])
           }
         }
       }
