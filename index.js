@@ -80,6 +80,10 @@ const fi = (function() {
       }
       return total
     },
+    
+    first: function(array, [n]) {
+      
+    },
 
     functions: function() {
 
