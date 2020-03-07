@@ -91,7 +91,7 @@ const fi = (function() {
     
     last: function(array, n) {
       if (!n) {
-        return array[-1]
+        return array[array.length - 1]
       } else {
         return array.slice(array.length - n)
       }
