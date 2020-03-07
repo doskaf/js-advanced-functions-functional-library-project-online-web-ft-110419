@@ -40,7 +40,7 @@ const fi = (function() {
         total = acc
       } else {
         total = collection[0];
-        i = 1
+        i = 1;
       }
       for (let i = 0; i < collection.length; i++) {
         total += collection[i]
