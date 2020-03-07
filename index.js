@@ -85,11 +85,7 @@ const fi = (function() {
       if (!n) {
         return array[0]
       } else {
-        let firsts = [];
-        for (let i = 0; i < n; i++) {
-          firsts.push(array[i])
-        }
-        return firsts
+        return array.slice(0, n)
       }
     },
     
