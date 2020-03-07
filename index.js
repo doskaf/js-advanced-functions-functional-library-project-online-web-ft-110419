@@ -111,7 +111,7 @@ const fi = (function() {
       
     },
 
-    functions: function() {
+    functions: function(array, callback) {
 
     },
 
