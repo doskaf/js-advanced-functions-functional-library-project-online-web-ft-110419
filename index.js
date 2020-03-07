@@ -71,6 +71,7 @@ const fi = (function() {
       for (let i = 0; i < collection.length; i++) {
         ++total
       }
+      return total
     },
 
     functions: function() {
