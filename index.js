@@ -57,7 +57,12 @@ const fi = (function() {
     },
     
     filter: function(collection, predicate) {
-      
+      let arr = [];
+      for (let i = 0; i < collection.length; i++) {
+        if (predicate(collection[i])) {
+          return collection[i]
+        }
+      }
     },
 
     functions: function() {
