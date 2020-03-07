@@ -33,7 +33,7 @@ const fi = (function() {
       return arr
     },
 
-    reduce: function() {
+    reduce: function(collection, callback, acc) {
 
     },
 
