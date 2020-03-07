@@ -10,7 +10,8 @@ const fi = (function() {
           callback(collection[i])
         }
       } else {
-        let values = collection.map(e => return e.value)
+        let values = Object.values(collection);
+        for (let i = 0; i < values.length; i++)
       }
       return collection
     },
