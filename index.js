@@ -145,6 +145,7 @@ const fi = (function() {
             newArr.push(changed[i])
           }
         }
+        return newArr
       }
     },
 
