@@ -137,6 +137,9 @@ const fi = (function() {
           }
         }
         return newArr
+      } else {
+        let newArr = [];
+        array.map()
       }
     },
 
