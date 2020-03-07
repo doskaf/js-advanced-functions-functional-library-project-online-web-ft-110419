@@ -117,7 +117,7 @@ const fi = (function() {
         let arr = [];
         for (let i = 0; i < array.length; i++) {
           if (Array.isArray(array[i])) {
-            arr.concat(array[i])
+            array[i].map(e => arr.push(e))
           } else {
             arr.push(array[i])
           }
