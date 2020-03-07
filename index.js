@@ -11,7 +11,9 @@ const fi = (function() {
         }
       } else {
         let values = Object.values(collection);
-        for (let i = 0; i < values.length; i++)
+        for (let i = 0; i < values.length; i++) {
+          callback
+        }
       }
       return collection
     },
