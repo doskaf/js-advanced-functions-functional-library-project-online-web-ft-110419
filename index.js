@@ -112,7 +112,7 @@ const fi = (function() {
       return arr.sort(function(a,b){ return callback(a) - callback(b) })
     },
     
-    flatten: function(array, [shallow]) {
+    flatten: function(array, shallow) {
       
     },
 
