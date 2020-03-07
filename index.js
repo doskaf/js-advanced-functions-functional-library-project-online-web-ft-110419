@@ -113,10 +113,10 @@ const fi = (function() {
     },
     
     flatten: function(array, shallow) {
-      let copy = [...array]
+      let copy = [...array];
       if (shallow) {
         let arr = [];
-        for (let i = 0; i < array.length; i++) {
+        for (let i = 0; i < copy.length; i++) {
           if (Array.isArray(array[i])) {
             array[i].map(e => arr.push(e))
           } else {
