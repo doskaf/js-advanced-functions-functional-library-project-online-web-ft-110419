@@ -114,7 +114,14 @@ const fi = (function() {
     
     flatten: function(array, shallow) {
       if (shallow) {
-        return array.flat(1)
+        let arr = [];
+        for (let i = 0; i < array.length; i++) {
+          if (Array.isArray(array[i])) {
+            arr.concat(array[i])
+          } else {
+            arr.push(array[i])
+          }
+        }
       } else {
         return array.join().split(",").map(e => parseInt(e))
       }
