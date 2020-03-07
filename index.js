@@ -9,6 +9,8 @@ const fi = (function() {
         for (let i = 0; i < collection.length; i++) {
           callback(collection[i])
         }
+      } else {
+        let values = collection.map(e => return e.value)
       }
       return collection
     },
