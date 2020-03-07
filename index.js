@@ -129,7 +129,7 @@ const fi = (function() {
     },
     
     uniq: function(array, isSorted, callback) {
-      
+      if (!isSorted)
     },
 
     functions: function(array, callback) {
