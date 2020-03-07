@@ -49,7 +49,11 @@ const fi = (function() {
     },
     
     find: function(collection, predicate) {
-      
+      for (let i = 0; i < collection.length; i++) {
+        if (collection[i] === predicate) {
+          return collection[i]
+        }
+      }
     },
 
     functions: function() {
