@@ -35,7 +35,10 @@ const fi = (function() {
 
     reduce: function(collection, callback, acc) {
       let total = 0;
-      if (acc) { total = acc }
+      let i = 0;
+      if (acc) {
+        total = acc
+      }
       for (let i = 0; i < collection.length; i++) {
         total += collection[i]
       }
