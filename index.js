@@ -130,7 +130,10 @@ const fi = (function() {
     
     uniq: function(array, isSorted, callback) {
       if (!isSorted) {
-        for (let i = )
+        let newArr = [];
+        for (let i = 0; i < array.length; i++) {
+          
+        }
       }
     },
 
