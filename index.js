@@ -114,7 +114,7 @@ const fi = (function() {
     
     flatten: function(array, shallow) {
       if (shallow) {
-        
+        array.forEach(element => ())
       } else {
         return array.join().split(",").map(e => parseInt(e))
       }
