@@ -19,7 +19,11 @@ const fi = (function() {
     },
 
     map: function(collection, callback) {
-      return collection.map(e => callback(e))
+      let arr = [];
+      for (let i = 0; i < collection.length; i++) {
+        arr.push(callback(collection[i]))
+      }
+      return arr
     },
 
     reduce: function() {
