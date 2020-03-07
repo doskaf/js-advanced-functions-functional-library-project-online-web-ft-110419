@@ -36,9 +36,9 @@ const fi = (function() {
     reduce: function(collection, callback, acc) {
       let total = 0;
       for (let i = 0; i < collection.length; i++) {
-        total += callback(acc, collection[i])
+        total += callback(collection[i])
       }
-      return total
+      return total + acc
     },
 
     functions: function() {
