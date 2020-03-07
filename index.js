@@ -96,6 +96,16 @@ const fi = (function() {
         return array.slice(array.length - n)
       }
     },
+    
+    compact: function(array) {
+      let arr = [];
+      for (let i = 0; i < array.length; i++) {
+        if (!!array[i]) {
+          arr.push(array[i])
+        }
+      }
+      return arr
+    },
 
     functions: function() {
 
