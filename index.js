@@ -27,7 +27,7 @@ const fi = (function() {
       } else {
         let values = Object.values(collection);
         for (let i = 0; i < values.length; i++) {
-          callback(values[i])
+          arr.push(callback(values[i]))
         }
       }
       return arr
