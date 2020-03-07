@@ -112,19 +112,19 @@ const fi = (function() {
       return arr.sort(function(a,b){ return callback(a) - callback(b) })
     },
     
-    flatten: function(array, shallow) {
+    flatten: function(arr, shallow) {
       if (shallow) {
         let newArr = [];
-        for (let i = 0; i < array.length; i++) {
+        for (let i = 0; i < arr.length; i++) {
           if (Array.isArray(arr[i])) {
-            newArr.push(...array[i])
+            newArr.push(...arr[i])
           } else {
-            newArr.push(array[i])
+            newArr.push(arr[i])
           }
         }
         return newArr
       } else {
-        return array.join().split(",").map(e => parseInt(e))
+        return arr.join().split(",").map(e => parseInt(e))
       }
     },
 
