@@ -93,7 +93,7 @@ const fi = (function() {
       if (!n) {
         return array[-1]
       } else {
-        
+        return array.slice(array.length - n)
       }
     },
 
