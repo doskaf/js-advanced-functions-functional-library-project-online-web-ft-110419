@@ -138,7 +138,11 @@ const fi = (function() {
         }
         return newArr
       } else {
-        let changed = array.map(e => callback(e))
+        let changed = array.map(e => callback(e));
+        let newArr = [];
+        for (let i = 0; i < changed.length; i++) {
+          
+        }
       }
     },
 
