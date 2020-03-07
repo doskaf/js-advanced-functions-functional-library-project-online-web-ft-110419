@@ -97,9 +97,7 @@ const fi = (function() {
       if (!n) {
         return array[-1]
       } else {
-        for (let i = 0; i ) {
-          
-        }
+        
       }
     },
 
