@@ -60,9 +60,10 @@ const fi = (function() {
       let arr = [];
       for (let i = 0; i < collection.length; i++) {
         if (predicate(collection[i])) {
-          return collection[i]
+          arr.push(collection[i])
         }
       }
+      return arr
     },
 
     functions: function() {
