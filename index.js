@@ -43,7 +43,7 @@ const fi = (function() {
         i = 1;
       }
       for (i; i < collection.length; i++) {
-        total += collection[i]
+        total = callback(total, collection[i])
       }
       return total
     },
