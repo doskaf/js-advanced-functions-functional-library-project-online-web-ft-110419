@@ -92,6 +92,16 @@ const fi = (function() {
         return firsts
       }
     },
+    
+    last: function(array, n) {
+      if (!n) {
+        return array[-1]
+      } else {
+        for (let i = 0; i ) {
+          
+        }
+      }
+    },
 
     functions: function() {
 
