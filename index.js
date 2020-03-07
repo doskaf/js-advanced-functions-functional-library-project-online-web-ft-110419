@@ -82,7 +82,15 @@ const fi = (function() {
     },
     
     first: function(array, n) {
-      
+      if (!n) {
+        return array[0]
+      } else {
+        let firsts = [];
+        for (let i = 0; i < n; i++) {
+          firsts.push(array[i])
+        }
+        return firsts
+      }
     },
 
     functions: function() {
