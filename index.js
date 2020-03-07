@@ -136,6 +136,7 @@ const fi = (function() {
             newArr.push(array[i])
           }
         }
+        return newArr
       }
     },
 
